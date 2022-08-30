@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100px;
+  background-color: #234;
+
+  div {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 50px;
+      height: 50px;
+      filter: brightness(1000%);
+      margin-right: 0.5rem;
+    }
+
+    h1 {
+      color: white;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+}
+
+main {
+  background-color: #dddddd;
+  line-height: 35px;
+  display: flex;
+  justify-content: center;
+  div.views {
+    width: 1200px;
+    margin: 40px;
+
+    div {
+      margin-bottom: 3rem;
+
+      h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.4rem;
+        text-shadow: 1px 1px 0px #888888;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      ul {
+        list-style: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    div {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+//scroll bar
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c4bebe;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #494949;
+}
